@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Login Module",
+    "topic": {
+      "title": "Login Module",
+      "topics": [
+        {
+          "title": "Functional Flows",
+          "topics": [
+            {
+              "title": "Standard Login",
+              "topics": [
+                { "title": "User enters registered email and password" },
+                { "title": "User clicks Login button" },
+                { "title": "System authenticates credentials" },
+                { "title": "User is redirected to dashboard" }
+              ]
+            },
+            {
+              "title": "Logout",
+              "topics": [
+                { "title": "User clicks profile icon" },
+                { "title": "User selects Logout" },
+                { "title": "Session is terminated" },
+                { "title": "User is redirected to login screen" }
+              ]
+            },
+            {
+              "title": "Forgot Password",
+              "topics": [
+                { "title": "User clicks Forgot Password link" },
+                { "title": "User enters registered email" },
+                { "title": "System sends reset link to email" },
+                { "title": "User sets new password via link" },
+                { "title": "User logs in with new password" }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Business Rules",
+          "topics": [
+            { "title": "Email must be in valid format (RFC 5322)" },
+            { "title": "Password minimum 8 characters" },
+            { "title": "Account locked after 5 consecutive failed attempts" },
+            { "title": "Session expires after 30 minutes of inactivity" },
+            { "title": "Reset link expires after 15 minutes" }
+          ]
+        },
+        {
+          "title": "Edge Cases",
+          "topics": [
+            { "title": "Login with leading/trailing spaces in email" },
+            { "title": "Login with CAPS LOCK on for password" },
+            { "title": "Login with maximum length email (254 chars)" },
+            { "title": "Login attempt after account lockout" },
+            { "title": "Concurrent login from two devices" },
+            { "title": "Login on slow network (>5s response)" },
+            { "title": "Browser back button after logout" }
+          ]
+        },
+        {
+          "title": "Dependencies",
+          "topics": [
+            { "title": "Authentication Service (SSO)" },
+            { "title": "Email Notification Service (for reset link)" },
+            { "title": "Session Management Module" },
+            { "title": "User Profile Module" }
+          ]
+        }
+      ]
+    }
+  }
+]
